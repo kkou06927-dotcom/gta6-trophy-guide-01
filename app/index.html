@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5</p>
+    <h1>Leonida Ledger</h1>
+    <p class="tagline">The offline trophy guide &amp; tracker: all 55 trophies, a guide and sources for each, the missables flagged, and a roadmap to the platinum.</p>
+  </div>
+  <div class="progress-card" aria-label="Overall progress">
+    <div class="progress-top">
+      <span id="earned-count" class="earned-count">0 of 55</span>
+      <span id="earned-percent" class="earned-percent">0%</span>
+    </div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+    <ul id="grade-counts" class="grade-counts"></ul>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <div class="toolbar-row">
+    <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+    <div class="view-switch" role="tablist" aria-label="View">
+      <button id="view-checklist" type="button" class="view-btn is-active">Checklist</button>
+      <button id="view-roadmap" type="button" class="view-btn">Roadmap</button>
+    </div>
+    <label class="spoiler-toggle">
+      <input id="spoiler-toggle" type="checkbox">
+      <span>Hide story spoilers</span>
+    </label>
+  </div>
+  <div class="toolbar-row">
+    <div id="chips" class="chips" role="group" aria-label="Filter trophies"></div>
+    <div class="data-actions">
+      <button id="export-btn" type="button">Export</button>
+      <label class="import-btn">Import<input id="import-file" type="file" accept="application/json,.json"></label>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
+  </div>
+</nav>
+
+<main class="layout">
+  <section id="checklist-view" class="checklist-view">
+    <p id="result-count" class="result-count"></p>
+    <ol id="trophy-list" class="trophy-list"></ol>
+    <p id="empty-note" class="empty-note" hidden></p>
+  </section>
+  <section id="roadmap-view" class="roadmap-view" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-intro">Built from the official descriptions: play the story in order and catch the missables while you are there, sweep the collectibles, grind the activities, then clean up and take the platinum.</p>
+    <div id="roadmap-stages"></div>
+  </section>
+  <aside id="guide-panel" class="guide-panel" aria-label="Trophy guide">
+    <div id="guide-body" class="guide-body">
+      <p class="guide-hint">Pick a trophy’s <strong>Guide</strong> button to read how to earn it, when it can be missed, and where its facts come from.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="colophon">
+  <p>Works fully offline. Progress lives in this browser (localStorage) and can be exported to a file. Trophy names, descriptions and grades are the official PlayStation list; every guide is written for this page and cites its sources. An original fan-made tracker — no Rockstar Games artwork or logos.</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
